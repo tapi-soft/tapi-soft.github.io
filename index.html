@@ -1,1 +1,78 @@
-たぴそふと！
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>motumotu</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
+    <script src="js/easySlider1.7.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="image/logo.png">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">サークル情報</a></li>
+                    <li><a href="">作品一覧</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div id="slideshow">
+                <div class="slider-wrap">
+                    <div id="slider">
+                        <ul>
+                            <li><img src="image/slide/01.png"></li>
+                            <li><img src="image/slide/02.png"></li>
+                            <li><img src="image/slide/03.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="banner">
+                <ul>
+                    <li><a href=""><img src="image/banner/01.png"></a></li>
+                    <li><a href=""><img src="image/banner/02.png"></a></li>
+                    <li><a href=""><img src="image/banner/03.png"></a></li>
+                    <li><a href=""><img src="image/banner/04.png"></a></li>
+                    <li><a href=""><img src="image/banner/05.png"></a></li>
+                </ul>
+            </div>
+            <div id="news">
+                <p>更新情報・お知らせ</p>
+                <ul>
+                    <li>2016/01/25 ゲームサークル「たぴそふと」設立</li>
+                </ul>
+            </div>
+            <div id="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/tapi_soft" data-widget-id="691998325491388416">@tapi_softさんのツイート</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright 2016, tapi-soft
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){   
+            $("#slider").easySlider({
+                auto: true, //自動でスライド設定
+                continuous: true, //ループの設定
+                numeric: false, //ページ番号ナビ
+                speed : 1000, //アニメーションのスピード
+                pause : 10000, //スライド後の持続時間
+                controlsShow : false, //コントロールの表示・非表示
+                
+            });
+        }); 
+    </script>
+</body>
+</html>
